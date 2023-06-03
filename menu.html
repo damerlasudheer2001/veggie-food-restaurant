@@ -1,0 +1,595 @@
+<htmL>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin :0px;  
+            }
+            .pg1{
+                width: 100%;
+                height: 115vh;
+            }
+            .navbar{
+                width: 100%;
+                height: 12vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgb(235, 249, 249);
+                position: relative;
+            }
+            .menu1{
+                flex-basis: 15%;
+                font-style: italic;
+                font-weight: 900;
+                position: relative;
+                animation-name: divanm;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes divanm{
+                0%{
+                    color: crimson;
+                }
+                25%{
+                    color: black;
+                }
+                50%{
+                    color: blue;
+                }
+                75%{
+                    color: rgb(20, 173, 255);
+                }
+                100%{
+                    color: rgb(30, 56, 5);
+                }
+            }
+            .x2{
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: coral;
+                font-weight: 600;
+            }
+            .x2:after{
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                background-color:brown;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            .x2:hover:after{
+            transform: scaleX(1);
+            transform-origin: bottom center;
+            }
+            .menu2{
+                height: 12vh;
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background-color: rgb(0,255,255);
+                text-align: center;
+            }
+            .menu2:hover{
+                background-color: black;
+            }
+            .menu2 h2{
+                color: white;
+            }
+            .menu2 h5{
+                color: white;
+            }
+            .background{
+                width: 100%;
+                height: 90vh;
+                background-image: url(https://veggiegrill.com/wp-content/uploads/2022/05/Untitled-design.png);
+                background-size: cover;     
+            }
+            .headdiv1 div{
+                width: 35%;
+                height: 50vh;
+                font-size: 70px;
+                line-height: 100px;
+                font-weight: 900;
+                background-color: rgb(0, 255, 255);
+                color: white;
+                text-align: center;
+                position: relative;
+                left: 10%;
+                top: 20vh;
+            }
+            .headdiv1{
+                width: 100%;
+                height: vh;
+                position: relative;
+                top: 30vh;
+            }
+            .heading{
+                color: rgb(27, 27, 26);
+                font-size: 50px;
+                font-weight: 900;
+                text-align: center;
+                padding-top: 5%;
+            }
+            h1{
+                text-align: center;
+                color: rgb(0, 217, 255);
+                position: relative;
+                top: 5vh;
+                height: 15vh;
+            }
+            .line{
+                width: 100%;
+                height: 8vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+            .re{
+                font-size: 20px;
+                color: black;
+            }
+            .re:hover{
+                /* text-shadow: 3px 3px crimson;
+                size: 15px; */
+                transform: translate(0px,-10px);
+            }
+            h2{
+                color: red;
+                height: 15vh;
+                text-align: center;
+            }
+            .item{
+                width: 100%;
+                height: 40vh;
+                display: flex;
+                align-content: space around;
+                flex-direction: column;
+                text-align: center;
+            }
+            .tem2{
+                width: 100%;
+                height: 40vh;
+                display: flex;
+                justify-content: apce around;
+                flex-direction: space around;
+            }
+            .dimg img{
+                width: 17%;
+                height: 20vh;
+            }
+            .iimg img{
+                width: 45%;
+                height: 20vh;
+            }
+            .name{
+                font-size: 25px;
+                color: rgb(16, 185, 53);
+                text-align: center;
+            }
+            .about{
+                width: 100%;
+                font-size: small;
+                color: rgb(155, 14, 108);
+                height: 10vh;
+                text-align: center;
+            }
+            button{
+                color: white;
+                background-color: brown;
+                width: 100px;
+                height:5vh;
+                font-size: 10px;
+                text-align: center;
+            }
+            button:hover{
+                background-color: rgb(37, 17, 75);
+            }
+            .mid1{
+                display: block;
+                justify-content:inline-block;
+                width: 100%;
+                height: 30vh;
+                background-color: white;
+            }
+            .p8 img{
+                width:8%;
+                height: 30%;
+                padding-left: 46%;
+                padding-top: 4%;
+            }
+            .p9 img{
+                width: 8%;
+                height: 10%;
+                padding-left: 46%;
+            }
+            .mid2{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+                grid-gap: 30px;
+                background-color: white;
+            }
+            .mid2 div video{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .mid2 div img{
+                width: 100%;
+                height: 85vh;
+                border-radius: 10px;
+            }
+            .end button{
+                margin-left: 37%;
+                margin-top: 2%;
+                width: 25%;
+                height: 5vh;
+                align-items: center;
+                font-size: 25px;
+                background-color: rgb(0, 225, 255);
+                
+            }
+            .end a{
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .end button:hover{
+                background-color: black;
+            }
+            .end a{
+                color: white;
+            }
+            .end a{
+                color: white;
+            }
+            .end1{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 60px;
+                margin-top: 3%;
+                color: rgb(0, 255, 255);
+            }
+            .end1 hr{
+                width: 15%;
+                border: 2px solid black;
+                height: 0px;
+                margin-top: 30px;
+            }
+            .end2{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 30vh;
+                background-color: white;
+            }
+            .p10 img{
+                height: 22vh;
+            }
+            .p11 img{
+                width: 65%;
+                height: 22vh;
+            }
+            .p12 img{
+                height: 22vh;
+            }
+            .hr{
+                width: 98%;
+                height: 1px;
+                border: 2px solid aqua;
+                padding-left: 23px;
+            }
+            .end3{
+                display: flex;
+                justify-content: space-around;
+                padding-top: 1.5%;
+            }
+            .p13{
+                font-size: 18px;
+            }
+            .s1{
+                margin-top: 15px;
+                font-size: 20px;
+            }
+            .end4{
+                text-align: center;
+                padding-top: 9px;
+                background-color: whitesmoke;
+                height: 5vh;
+                color: rgb(0, 225, 255);
+            }
+            .end5{
+                background-color: rgb(0, 255, 255);
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: space-around;
+                font-size: medium;
+            }
+            .fa-square-facebook{
+                font-size: 40px;
+                color: bisque;
+                
+            }
+            .fa-square-facebook:hover{
+                background-color: blue;
+            }
+            .fa-instagram{
+                font-size: 40px;
+                color: rgb(156, 7, 57);
+            }
+            .fa-instagram:hover{
+                background-color:mediumorchid;
+            }
+            .fa-twitter{
+                font-size: 40px;
+                color:bisque;
+            }
+            .fa-twitter:hover{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pg1">
+            <div class="navbar">
+                <div class="menu1">
+                    <a href="img.html"><img src="Veggie_Grill_logo.svg"></a>
+                </div>
+                <div></div>
+                <div><a href="menu.html"  class="x2">MENUS</a></div>
+                <div><a href="location.html"  class="x2">LOCATIONS</a></div>
+                <div><a href="cat.html"  class="x2">CATERING</a></div>
+                <div><a href="story.html"  class="x2">STORY</a></div>
+                <div><a href="rewards.html"  class="x2">REWARDS</a></div>
+                <div><a href="mas.html"  class="x2">MÁS VEGGIES</a></div>
+                <div><a href="d.html"  class="x2">DAILY DEALS</a></div>
+                <div></div>
+                <div class="menu2"><h2>ORDER NOW</h2>
+                    <h2>Pick-up or Delivery</h2>
+                </div>
+            </div>
+        <div class="background">
+            <div class="headdiv1"><div>PLANT BASED FOOD FOR EVERY MOOD.</div>
+        </div>
+       </div>
+        <div class="heading">VEGGIE GRILL MENUS</div>
+        <h1>RESTAURANT MENU</h1>
+        <div class="line">
+            <div class="re">Featured Items</div>
+            <div class="re">Salads</div>
+            <div class="re">Bowls</div>
+            <div class="re">Burgers&sandwiches</div>
+            <div class="re">Family Meal</div>
+            <div class="re">Kids</div>
+        </div>
+        <h2>Featured Items</h2>
+        <div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/05/Harvest-Bowl-Bitchin-Style-1536x1229.jpg"/></div>
+                <div class="name">Bitchin' BLT</div>
+                <p class="about">Chipotle Bitchin, Sauce on our BLTA made with</br> crispy bacon, romaine lettuce, sliced tomato, dijonnaise,</br> and mashed avocado served on a flaky croissant roll
+                </p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+            <div class="tem2">
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/05/Smokey-Corn-Bisque-Bread-Bowl-1536x1229.jpg"/></div>
+                    <div class="name">Bean Chili Bread Bowl</div>
+                    <p class="about">A hearty house-made mix of 3 bean chili, </br>green onion, chili spices, and shredded cheddar</br> cheese served in a flakey sourdough bowl</p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Carrot-Cake-1536x1229.jpg"/></div>
+                    <div class="name">Carrot Cake</div>
+                    <p class="about">Fresh carrots, walnuts, VG cream</br> cheese frosting</p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/11/Chocolate-Pudding-Parfait-1536x1229.jpg"/></div>
+                    <div class="name">Chocolate Pudding Parfait</div>
+                    <p class="about">Chipotle Bitchin,crispy bacon, romaine</br>  lettuce, sliced tomato, dijonnaise</p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Chocolate-Chip-Cookie-1536x1229.jpg"/></div>
+                <div class="name">Chocolate Chip Cookie</div>
+                <p class="about">Baked in-house daily</br>A hearty house-made mix of 3 bean chili</p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+        </div>
+        <h2>Salads</h2>
+        <div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Super-Greens-Quinoa-Salad-1536x1229.jpg"/></div>
+                <div class="name">Super Greens + Quinoa Salad</div>
+                <p class="about">Nourishing mix of kale, baby </br>brspinach, cabbage, carrots,marinated quinoa,</br> dried </p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+            <div class="tem2">
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Classic-Romaine-Caesar-1536x1229.jpg"/></div>
+                    <div class="name">Classic Romaine Caesar</div>
+                    <p class="about">Classic Romaine Caesar, Sauce on our BLTA made with</br> crispy bacon, romaine lettuce, sliced tomato, dijonnaise,</br> and mashed avocado served on a flaky croissant roll
+                    </p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/08/Catalina-Taco-Salad-1536x1229.jpg"/></div>
+                    <div class="name">Catalina Taco Salad</div>
+                    <p class="about">Spinach, kale, cabbage, and carrot </br>mix topped with Tex-Mex </p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/05/Chinese-Chickin-Salad-e1660014508773.jpg"/></div>
+                    <div class="name">Chinese Chick'n Salad</div>
+                    <p class="about">Chinese Chick'n Salad, Sauce on our BLTA made with</br> crispy bacon, romaine lettuce, sliced tomato, dijonnaise,</br> and mashed avocado served on a flaky croissant roll
+                    </p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Power-Greens-Caesar-1536x1229.jpg"/></div>
+                <div class="name">Power Greens Caesar</div>
+                <p class="about">Power Greens Mix of baby spinach, kale,</br> green + red cabbage and carrots</p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+        </div>
+        <h2>Bowles</h2>
+        <div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Harvest-Bowl-1536x1229.jpg"/></div>
+                <div class="name">Harvest Bowl</div>
+                <p class="about">Grilled tamari mushrooms, roasted butternut </br>squash, turmeric cauliflower</p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+            <div class="tem2">
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/08/Far-East-Bowl-1536x1229.jpg"/></div>
+                    <div class="name">Far East Bowl</div>
+                    <p class="about">Far East Bowl, Sauce on our BLTA made with</br> crispy bacon, romaine lettuce, sliced tomato, dijonnaise,</br> and mashed avocado served on a flaky croissant roll
+                    </p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/11OLO-1536x1229.png"/></div>
+                    <div class="name">Cali Power Bowl</div>
+                    <p class="about">Cali Power Bowl, Sauce on our BLTA made with</br> crispy bacon, romaine lettuce, sliced tomato, dijonnaise,</br> and mashed avocado served on a flaky croissant roll
+                    </p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/11/corn-bisque-1536x1229.png"/></div>
+                    <div class="name">Smokey Corn Bisque Soup</div>
+                    <p class="about">Smokey Corn Bisque Soup,</br> crispy bacon, roma dijonnaise,</br> and mashed avocado served on a flaky </p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Mac-and-Cheese-1536x1229.jpg"/></div>
+                <div class="name">Bowl of Mac & Cheese</div>
+                <p class="about">Served with gremolata bread</br> crumbs and lemon zest</p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+        </div>
+        <h2>Kid's Faverate</h2>
+        <div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Kids-Veggie-Burger-1536x1229.jpg"/></div>
+                <div class="name">Kids’ Veggie Burger</div>
+                <p class="about">Beyond burger with lettuce, tomato, pickles,</br>and ketchup on a brioche bun</p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+            <div class="tem2">
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Kids-Crispy-Fish-1536x1229.jpg"/></div>
+                    <div class="name">Kids’ Crispy Fish</div>
+                    <p class="about">Two (2) crispy fish filets served with creamy</br> ranch dipping sauce</p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Kids-Crispy-Chickin-1536x1229.jpg"/></div>
+                    <div class="name">Kids’ Crispy Chick’n</div>
+                    <p class="about">Three (3) crispy Chick’n wings served </br>with creamy ranch dipping sauce</p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+                <div class="item">
+                    <div class="iimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Kids-Mac-n-Cheese-1536x1229.jpg"/></div>
+                    <div class="name">Kids’ Mac-n-Cheese</div>
+                    <p class="about">Fusilli pasta with house-made creamy cheese sauce</p>
+                    <div class="ord"><button>START YOUR ORDER</button></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dimg"><img src="https://veggiegrill.com/wp-content/uploads/2022/04/Kids-Quesadilla-1536x1229.jpg"/></div>
+                <div class="name">Kids’ Quesadilla</div>
+                <p class="about">Toasted flour tortilla with melted</br> cheddar cheese</p>
+                <div class="ord"><button>START YOUR ORDER</button></div>
+            </div>
+            <div class="mid1">
+                <div class="p8">
+                    <img src="img13.png">
+                </div>
+                <div class="p9">
+                    <img src="Veggie_Grill_logo.svg">
+                </div>
+            </div>
+            <div class="mid2">
+                <div>
+                    <video controls>
+                        <source src="654B7AEAF2FA23900E2727712AF81B93_video_dashinit.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="B8472925A7B1A104C1EB3FCFB3D28085_video_dashinit.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="EC466090C9AFD26F62E67C07C8DB7E9A_video_dashinit.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <img src="img14.jpg">
+                </div>
+            </div>
+            <div class="end">
+                <button><a href="https://www.instagram.com/veggiegrill/"><i class="fa-brands fa-square-instagram"></i>FOLLOW @VEGGIEGRILL</a></button>
+            </div>
+            <div class="end1">
+                <hr>
+                <div>JOIN THE PLANT-BASED PARTY</div>
+                <hr>
+            </div>
+            <div class="end2">
+                <div class="p10">
+                    <img src="img15.jpg">
+                </div>
+                <div class="p11">
+                    <img src="img13.png">
+                </div>
+                <div class="p12">
+                    <img src="img16.jpg">
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="end3">
+                <div class="p13">
+                    <div class="s1">CONTACT</div>
+                    <div class="s1">CAREERS</div>
+                    <div class="s1">GIFT CARDS</div>
+                    <div class="s1">NUTRITIONAL MENU</div>
+                    <div class="s1">NUTRITIONAL CALCULATOR</div>
+                </div>
+                <div class="p14">
+                    <div class="s1" >Connect with us</div>
+                    <div class="s1"><i class="fa-brands fa-square-facebook"></i>   <i class="fa-brands fa-instagram"></i>    <i class="fa-brands fa-twitter"></i></div>
+                    <div class="s1">Download our app</div>
+                    <div class="s1">
+                        <img src="img17.svg"> <img src="img18.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="end4">
+                <h2>SIGN UP FOR UPDATES</h2>
+            </div>
+            <div class="end5">
+                <div class="p15">
+                    <div><pre>Terms of Use   privacy policy   CA supply chain Act   cookie Preferencs</pre></div>
+                </div>
+                <div class="p16">
+                    <div><pre>2023 Veggie Grill.all rights Reserved</pre></div>
+                </div>
+        </div>
+    </body>
+</htmL>

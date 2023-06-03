@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+        margin: 0px;
+    }
+    .navbar{
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        position: relative;
+    }
+    .menu1 img{
+        width: 70%;
+        height: 12vh;
+        padding-left: 2%;
+    }
+    .x2{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: coral;
+        font-weight: 600;
+    }
+    .x2:after{
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        background-color: deeppink;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+        .x2:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom center;
+    }
+    .menu2{
+        height: 12vh;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(0,255,255);
+        text-align: center;
+    }
+    .menu2:hover{
+        background-color: black;
+    }
+    .menu2 h2{
+        color: white;
+    }
+    .menu2 h5{
+        color: white;
+    }
+    .background{
+        width: 100%;
+        height: 90vh;
+        background-image:url(img26.png);
+        background-size: cover;     
+    }
+    .headdiv1 div{
+        width: 35%;
+        height: 35vh;
+        font-size:50px;
+        line-height: 100px;
+        font-weight: 900;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        text-align: center;
+        position: relative;
+        left: 10%;
+        top: 20vh;
+    }
+    .headdiv1{
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        top: 30vh;
+        text-align: center;
+    }
+    .headdiv1 div{
+        padding-top: 5%;
+    }
+    .con{
+        display: flex;
+        justify-content: space-around;
+    }
+    .c1 p{
+        font-size: 25px;
+        text-align: center;
+        color: blue;
+        padding-top: 2%;
+    }
+    .c3{
+        font-size: 30px;
+        text-align: center;
+        font-style: italic;
+        color: blue;
+        padding-top: 5%;
+    }
+    .c2 img{
+        height: 80vh;
+        width: 100%;
+    }
+    .c1 button{
+        margin-left: 45%;
+        margin-top: 5%;
+        height: 5vh;
+        width: 15%;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+    }
+    .c1 button:hover{
+        background-color: orangered;
+    }
+    .son{
+        display: flex;
+        justify-content: space-around;
+    }
+    .s2 p{
+        font-size: 25px;
+        text-align: center;
+        color: blue;
+        padding-top: 5%;
+    }
+    .s3{
+        font-size: 30px;
+        text-align: center;
+        font-style: italic;
+        color: blue;
+        padding-top: 5%;
+    }
+    .s1 img{
+        height: 80vh;
+        width: 120%;
+        padding-top: 5%;
+    }
+    .s2 button{
+        margin-left: 45%;
+        margin-top: 5%;
+        height: 5vh;
+        width: 15%;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+    }
+    .s2 button:hover{
+        background-color: orangered;
+    }
+    .honey{
+        display: flex;
+        justify-content: space-around;
+    }
+    .honey img{
+        width: 100%;
+        height: 50vh;
+        padding-top: 15%;
+    }
+    .end1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 60px;
+        margin-top: 3%;
+        color: rgb(0, 255, 255);
+    }
+    .end1 hr{
+        width: 15%;
+        border: 2px solid black;
+        height: 0px;
+        margin-top: 30px;
+    }
+    .end2{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 30vh;
+        background-color: white;
+    }
+    .p10 img{
+        height: 22vh;
+    }
+    .p11 img{
+        width: 65%;
+        height: 22vh;
+    }
+    .p12 img{
+        height: 22vh;
+    }
+    .hr{
+        width: 98%;
+        height: 1px;
+        border: 2px solid aqua;
+        padding-left: 23px;
+    }
+    .end3{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1.5%;
+    }
+    .p13{
+        font-size: 18px;
+    }
+    .p14 img{
+        width: 80px;
+        height: 4vh;
+    }
+    .s1{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .end4{
+        text-align: center;
+        padding-top: 9px;
+        background-color: whitesmoke;
+        height: 5vh;
+        color: rgb(0, 225, 255);
+    }
+    .end5{
+        background-color: rgb(0, 255, 255);
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: space-around;
+        font-size: medium;
+    }
+    .fa-square-facebook{
+        font-size: 40px;
+        color: bisque;
+        
+    }
+    .fa-square-facebook:hover{
+        background-color: blue;
+    }
+    .fa-instagram{
+        font-size: 40px;
+        color: rgb(156, 7, 57);
+    }
+    .fa-instagram:hover{
+        background-color:mediumorchid;
+    }
+    .fa-twitter{
+        font-size: 40px;
+        color:bisque;
+    }
+    .fa-twitter:hover{
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="pag1">
+        <div class="navbar">
+            <div class="menu1">
+                <a href="img.html"><img src="Veggie_Grill_logo.svg"></a>
+            </div>
+            <div></div>
+            <div><a href="menu.html"  class="x2">MENUS</a></div>
+            <div><a href="location.html"  class="x2">LOCATIONS</a></div>
+            <div><a href="cat.html"  class="x2">CATERING</a></div>
+            <div><a href="story.html"  class="x2">STORY</a></div>
+            <div><a href="rewards.html"  class="x2">REWARDS</a></div>
+            <div><a href="mas.html"  class="x2">MÁS VEGGIES</a></div>
+            <div><a href="d.html"  class="x2">DAILY DEALS</a></div>
+            <div></div>
+            <div class="menu2"><h2>ORDER NOW</h2><h5>Pick-up or Delivery</h5></div>
+        </div>
+        <div class="background">
+            <div class="headdiv1">
+                <div>MÁS VEGGIES BYVEGGIE GRILL</div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="c1">
+                <div class="c3">100% PLANT-BASED.<br> 100% DELICIOUS.</div>
+                <p>Our spicy little sister, Más Veggies, is a vegan taqueria born to satisfy the<br> cravings of conscious Mexican food lovers. Now, you don't have to <br>compromise your health OR the planet when you're in the mood for<br> authentic Mexican food.</p>
+                <p>With crafted tacos, loaded burritos, nachos, and more, we've got your<br> Mexican food cravings covered.</p>
+                <p>The variety of options, that are nearly all gluten-free, can be ordered in-<br>store at any Veggie Grill OR online for pick-up.</p>
+                <div class="c3">The variety of options, that are nearly all gluten-free, <br>can be ordered in-store at any Veggie Grill OR online for pick-up.</div>
+                <button>Order Now</button>
+            </div>
+            <div class="c2">
+                <img src="img21.png">
+            </div>
+        </div>
+        <div class="son">
+            <div class="s1">
+                <img src="img22.png">
+            </div>
+            <div class="s2">
+                <div class="s3">TACO PARTY PACK</div>
+                <p>Catering is available at Más Veggies! Enjoy a plant-based fiesta with all of<br> your taco party essentials.</p>
+                <p>Each taco party pack comes with 12 tacos, brown rice, ranchero beans,<br> hacienda salad, tortilla chips and a salsa trio (mild, medium, hot)</p>
+                <p>Pick any two styles (6 tacos of each flavor) to have in your taco party <br>pack: Chickin Tinga, Smokey Mushroom Asada, Tejano Style, Chipotle<br> Carnitas, Crispy Baja Fish.</p>
+                <div class="c3">Taco Party Packs serve between 6-12 people.</div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="honey">
+            <div class="h1">
+                <img src="img23.webp">
+            </div>
+            <div class="h2">
+                <img src="img24.webp">
+            </div>
+            <div class="h3">
+                <img src="img25.webp">
+            </div>
+        </div>
+        <div class="end1">
+            <hr>
+            <div>JOIN THE PLANT-BASED PARTY</div>
+            <hr>
+        </div>
+        <div class="end2">
+            <div class="p10">
+                <img src="img15.jpg">
+            </div>
+            <div class="p11">
+                <img src="img13.png">
+            </div>
+            <div class="p12">
+                <img src="img16.jpg">
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="end3">
+            <div class="p13">
+                <div class="s1">CONTACT</div>
+                <div class="s1">CAREERS</div>
+                <div class="s1">GIFT CARDS</div>
+                <div class="s1">NUTRITIONAL MENU</div>
+                <div class="s1">NUTRITIONAL CALCULATOR</div>
+            </div>
+            <div class="p14">
+                <div class="s1" >Connect with us</div>
+                <div class="s1"><i class="fa-brands fa-square-facebook"></i>   <i class="fa-brands fa-instagram"></i>    <i class="fa-brands fa-twitter"></i></div>
+                <div class="s1">Download our app</div>
+                <div class="s1">
+                    <img src="img17.svg"> <img src="img18.svg">
+                </div>
+            </div>
+        </div>
+        <div class="end4">
+            <h2>SIGN UP FOR UPDATES</h2>
+        </div>
+        <div class="end5">
+            <div class="p15">
+                <div><pre>Terms of Use   privacy policy   CA supply chain Act   cookie Preferencs</pre></div>
+            </div>
+            <div class="p16">
+                <div><pre>2023 Veggie Grill.all rights Reserved</pre></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    </div>
+</body>
+</html>

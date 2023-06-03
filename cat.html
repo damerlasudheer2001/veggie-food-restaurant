@@ -1,0 +1,564 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0px;
+            }
+            .navbar{
+                width: 100%;
+                height: 12vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+                position: relative;
+            }
+            .menu1 img{
+                width: 70%;
+                height: 12vh;
+                padding-left: 2%;
+            }
+            .x2{
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: coral;
+                font-weight: 600;
+            }
+            .x2:after{
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                background-color: deeppink;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            .x2:hover:after{
+                transform: scaleX(1);
+                transform-origin: bottom center;
+            }
+            .menu2{
+                height: 12vh;
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background-color: rgb(0, 255, 255);
+                text-align: center;
+            }
+            .menu2:hover{
+                background-color: black;
+            }
+            .menu2 h2{
+                color: white;
+            }
+            .menu2 h5{
+                color: white;
+            }
+            .dotcon{
+                position: absolute;
+                width:80%;
+                bottom: 10vh;
+                left: 10%;
+                justify-content: center;
+                display: flex;
+            }
+            .background{
+                width: 100%;
+                height: 90vh;
+                background-image: url(https://veggiegrill.com/wp-content/uploads/2022/01/Sandwiches-and-Sides_Hands-VG-001-cropped.jpg);
+                background-size: cover;
+            }
+            .headdiv1 div{
+                width: 45%;
+                height: 48vh;
+                font-size: 85px;
+                font-weight: 900;
+                background-color: crimson;
+                line-height: 100px;
+                color: white;
+                text-align: center;
+                position: relative;
+                left: 10%;
+                top: 15vh;
+                padding-top: 2%;
+            }
+            .headdiv1{
+                width: 100%;
+                height: 40;
+                position: relative;
+                top: 30vh;
+            }
+            .name{
+                width: 20vh;
+                width: 100%;
+                text-align: center;
+                font-size: 50px;
+                font-weight: 900;
+                position: relative;
+                top: 10vh;
+            }
+            .pp{
+                width: 100%;
+                height: 30vh;
+                font-size: 18px;
+                position: relative;
+                top: 15vh;
+            }
+            .buthead{
+                font-size: 50px;
+                text-align: center;
+                font-weight: 800;
+            }
+            .paraline{
+                font-size: 25px;
+                font-weight: 300;
+                text-align: center;
+                width: 100%;
+            }
+            .ab{
+                display: flex;
+                justify-content: space-around; 
+                flex-direction: row; 
+                width: 50%;
+                height: 20vh;
+                position: relative;
+                top: 5vh;
+                left: 25%;
+            }
+            .ab button{
+                width: 25%;
+                height: 6vh;
+                border-radius: 5%;
+                background-color: orangered;
+                color: white;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .ab button:hover{
+                width: 25%;
+                height: 6vh;
+                border-radius: 5%;
+                background-color: rgb(35, 14, 92);
+                color: white;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .imgdiv{
+                width: 100%;
+                height: 50vh;
+                position: relative;
+                top: 5vh;
+                display: flex;
+                justify-content: space-around;
+            }
+            .imgdiv img{
+                height: 40vh;
+                width: 30%;
+            }
+            .veg{
+                width: 100%;
+                height: 100vh;
+                background-color: bisque;
+            }
+            .losthead{
+                width: 100%;
+                height: 10vh;
+                font-size: 40px;
+                font-weight: 800;
+                text-align: center;
+            }
+            .lostp{
+                font-size: 20px;
+                text-align: center;
+            }
+            .finaldiv{
+                width: 95%;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: relative;
+                left: 2.5%;
+                top: 3vh;
+            }
+            .innerfinal{
+                width: 90%;
+                height: 5vh;
+                background-color: white;
+                position: relative;
+                left: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .d3{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .d4:hover{
+                width: 50px;
+                height: 50px;
+                box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+            }
+            .d5:hover{
+                width: 50px;
+                height: 50px;
+                box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+            }
+            .d6:hover{
+                width: 50px;
+                height: 50px;
+                box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+            }
+            .ls{
+            width: 90%;
+                height: 5vh;
+                background-color:white;
+                text-align: center;
+                position: relative;
+                left: 5%;
+                display: none;
+            }
+            .innerfinal div{
+                position: relative;
+                top: 1vh;
+            }
+            .innerfinal i{
+                position: relative;
+                top: 0.5vh;
+                right: 5px;
+                
+            }
+            .innerfinal i:hover{
+                position: relative;
+                top: 0.5vh;
+                right: 8px;
+                font-size: 22px;
+                color: white;
+            }
+            /* .mid1{
+                display: block;
+                justify-content:inline-block;
+                width: 100%;
+                height: 20vh;
+                background-color: white;
+            } */
+            .p8 img{
+                width:8%;
+                height: 10%;
+                padding-left: 47%;
+                padding-top: 5%;
+                
+            }
+            .p9 img{
+                width: 8%;
+                height: 10%;
+                padding-left: 47%;
+            }
+            .mid2{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+                grid-gap: 30px;
+                background-color: white;
+            }
+            .mid2 div video{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .mid2 div img{
+                width: 100%;
+                height: 85vh;
+                border-radius: 10px;
+            }
+            .end button{
+                margin-left: 37%;
+                margin-top: 2%;
+                width: 25%;
+                height: 5vh;
+                align-items: center;
+                font-size: 25px;
+                background-color: rgb(0, 225, 255);
+                
+            }
+            .end a{
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .end button:hover{
+                background-color: black;
+            }
+            .end a{
+                color: white;
+            }
+            .end a{
+                color: white;
+            }
+            .end1{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 60px;
+                margin-top: 3%;
+                color: rgb(0, 255, 255);
+            }
+            .end1 hr{
+                width: 15%;
+                border: 2px solid black;
+                height: 0px;
+                margin-top: 30px;
+            }
+            .end2{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 30vh;
+                background-color: white;
+            }
+            .p10 img{
+                height: 22vh;
+            }
+            .p11 img{
+                width: 65%;
+                height: 22vh;
+            }
+            .p12 img{
+                height: 22vh;
+            }
+            .hr{
+                width: 98%;
+                height: 1px;
+                border: 2px solid aqua;
+                padding-left: 23px;
+            }
+            .end3{
+                display: flex;
+                justify-content: space-around;
+                padding-top: 1.5%;
+            }
+            .p13{
+                font-size: 18px;
+            }
+            .s1{
+                margin-top: 15px;
+                font-size: 20px;
+            }
+            .end4{
+                text-align: center;
+                padding-top: 9px;
+                background-color: whitesmoke;
+                height: 5vh;
+                color: rgb(0, 225, 255);
+            }
+            .end5{
+                background-color: rgb(0, 255, 255);
+                width: 100%;
+                height: 5vh;
+                display: flex;
+                justify-content: space-around;
+                font-size: medium;
+            }
+            .fa-square-facebook{
+                font-size: 40px;
+                color: bisque;
+                
+            }
+            .fa-square-facebook:hover{
+                background-color: blue;
+            }
+            .fa-instagram{
+                font-size: 40px;
+                color: rgb(156, 7, 57);
+            }
+            .fa-instagram:hover{
+                background-color:mediumorchid;
+            }
+            .fa-twitter{
+                font-size: 40px;
+                color:bisque;
+            }
+            .fa-twitter:hover{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pg1">
+            <div class="navbar">
+                <div class="menu1">
+                    <a href="img.html"><img src="Veggie_Grill_logo.svg"></a>
+                </div>
+                <div><a href="menu.html"  class="x2">MENUS</a></div>
+                <div><a href="location.html"  class="x2">LOCATIONS</a></div>
+                <div><a href="cat.html"  class="x2">CATERING</a></div>
+                <div><a href="story.html"  class="x2">STORY</a></div>
+                <div><a href="rewards.html"  class="x2">REWARDS</a></div>
+                <div><a href="mas.html"  class="x2">MÁS VEGGIES</a></div>
+                <div><a href="d.html"  class="x2">DAILY DEALS</a></div>
+                <div></div>
+                <div class="menu2"><h2>ORDER NOW</h2><h5>Pick-up or Delivery</h5></div>
+            </div>
+        <div class="background">
+            <div class="headdiv1"><div>PLANT US AT YOUR NEXT GATHERING.</div></div>
+        </div>
+        <div class="name">CATERING</div>
+        <p class="pp">Our catering options aren’t just crowd-pleasers, they’re planet-pleasers. And we’ve got something for everyone, whether they’re full-on vegans, curious carnivores, or just open to being surprised by the richly satisfying flavors of our 100% plant-based burgers, bowls, sandwiches and more. And, of course, our packaging is recyclable and compostable, so in addition to delighting your guests Mother Nature will be happy, too.</p>
+        <div class="buthead">BEFORE ORDERING, PLEASE NOTE:</div>
+        <p class="paraline">We ask for 4 hours notice when placing your order.</p>
+        <p  class="paraline">We require a $125 minimum subtotal on all catering orders.</p>
+        <div class="ab">
+            <button>ORDER DELIVERY</button>
+            <button>ORDER PICK-UP</button>
+        </div>
+        <div class="imgdiv">
+            <img src="https://veggiegrill.com/wp-content/uploads/2022/06/Lunchbox-Lifestyle-VG-002-cropped-1024x683.jpg"/>
+            <img src="https://veggiegrill.com/wp-content/uploads/2022/01/1-1024x623.png"/>
+            <img src="https://veggiegrill.com/wp-content/uploads/2022/12/11Lunchbox-Lifestyle-VG-002-cropped-1024x683-1.jpg"/>
+        </div>
+        <div class="veg">
+            <div class="losthead">CATERING FAQ</div>
+            <p class="lostp">You have questions, we have (most) answers. If you have additional questions, send an email to our VG Catering Team.</p>
+            <div class="finaldiv">
+                <div >
+                    <div class="innerfinal"> 
+                        <div>Advance Notice Policy</div>
+                    
+                    <div><i  onclick="fun7(this,'ls')" class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="ls" id="ls">We require a $125 minimum subtotal on all catering orders, not including taxes or delivery fees.</div>
+                </div>
+                <div>
+                    <div class="innerfinal"> 
+                        <div>Cancellation Policy</div>
+                    <div><i onclick="fun7(this,'ls1')" class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="ls" id="ls1">Order cancellations may be made up to 24 hours prior to the pickup or delivery time with no charge.</div>
+                </div>
+                <div >
+                    <div class="innerfinal"> 
+                        <div>Order Minimum</div>
+                    
+                    <div><i  onclick="fun7(this,'ls2')" class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="ls" id="ls2">We require 24 hours of advance notice on all catering orders as our food is prepared fresh daily.</div>
+                </div>
+                <div >
+                    <div class="innerfinal"> 
+                        <div>Tax-Exempt Policy</div>                
+                    <div><i  onclick="fun7(this,'ls3')" class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="ls" id="ls3">Currently, we do not offer tax-exemption for catering orders. </div>
+                </div>
+                <div >
+                    <div class="innerfinal"> 
+                        <div>Advance Notice Policy</div>
+                    <div><i  onclick="fun7(this,'ls4')" class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="ls" id="ls4">We require a $125 minimum subtotal on all catering orders, not including taxes or delivery fees.</div>
+                </div>
+            </div>
+            <div class="mid1">
+                <div class="p8">
+                    <img src="img13.png">
+                </div>
+                <div class="p9">
+                    <img src="Veggie_Grill_logo.svg">
+                </div>
+            </div>
+            <div class="mid2">
+                <div>
+                    <video controls>
+                        <source src="654B7AEAF2FA23900E2727712AF81B93_video_dashinit.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="B8472925A7B1A104C1EB3FCFB3D28085_video_dashinit.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="EC466090C9AFD26F62E67C07C8DB7E9A_video_dashinit.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <img src="img14.jpg">
+                </div>
+            </div>
+            <div class="end">
+                <button><a href="https://www.instagram.com/veggiegrill/"><i class="fa-brands fa-square-instagram"></i>FOLLOW @VEGGIEGRILL</a></button>
+            </div>
+            <div class="end1">
+                <hr>
+                <div>JOIN THE PLANT-BASED PARTY</div>
+                <hr>
+            </div>
+            <div class="end2">
+                <div class="p10">
+                    <img src="img15.jpg">
+                </div>
+                <div class="p11">
+                    <img src="img13.png">
+                </div>
+                <div class="p12">
+                    <img src="img16.jpg">
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="end3">
+                <div class="p13">
+                    <div class="s1">CONTACT</div>
+                    <div class="s1">CAREERS</div>
+                    <div class="s1">GIFT CARDS</div>
+                    <div class="s1">NUTRITIONAL MENU</div>
+                    <div class="s1">NUTRITIONAL CALCULATOR</div>
+                </div>
+                <div class="p14">
+                    <div class="s1" >Connect with us</div>
+                    <div class="s1"><i class="fa-brands fa-square-facebook"></i>   <i class="fa-brands fa-instagram"></i>    <i class="fa-brands fa-twitter"></i></div>
+                    <div class="s1">Download our app</div>
+                    <div class="s1">
+                        <img src="img17.svg"> <img src="img18.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="end4">
+                <h2>SIGN UP FOR UPDATES</h2>
+            </div>
+            <div class="end5">
+                <div class="p15">
+                    <div><pre>Terms of Use   privacy policy   CA supply chain Act   cookie Preferencs</pre></div>
+                </div>
+                <div class="p16">
+                    <div><pre>2023 Veggie Grill.all rights Reserved</pre></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var f=0
+            function fun7(ar,ar1){
+               
+                e=document.getElementById(ar1)
+                if(f==0)
+                {
+                    ar.className="fa-solid fa-minus"
+                    e.style.display="block"
+                    f=1
+                }
+                else{
+                    ar.className="fa-solid fa-plus"
+                    e.style.display="none"
+                    f=0
+                }
+            }
+          </script>
+    </body>
+</html>

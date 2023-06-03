@@ -1,0 +1,399 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            *{
+                margin: 0px;
+            }
+            .navbar{
+            width: 100%;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            position: relative;
+        }
+        .menu1 img{
+            width: 70%;
+            height: 12vh;
+            padding-left: 2%;
+        }
+        .x2{
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: coral;
+            font-weight: 600;
+        }
+        .x2:after{
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            background-color: deeppink;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .x2:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom center;
+        }
+        .menu2{
+            height: 12vh;
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(0,255,255);
+            text-align: center;
+        }
+        .menu2:hover{
+            background-color: black;
+        }
+        .menu2 h2{
+            color: white;
+        }
+        .menu2 h5{
+            color: white;
+        }
+        .dotcon{
+            position: absolute;
+            width:80%;
+            bottom: 10vh;
+            left: 10%;
+            justify-content: center;
+            display: flex;
+        }
+        .background{
+            width: 100%;
+            height: 90vh;
+            background-image: url(https://veggiegrill.com/wp-content/uploads/2022/04/rewards-header.jpg);
+            background-size: cover;
+        }
+        .headdiv1 div{
+            width: 50%;
+            height: 42vh;
+            font-size: 70px;
+            font-weight: 900;
+            line-height: 100px;
+            background-color:rgb(0,255,255);
+            color: rgb(12, 99, 133);
+            position: relative;
+            left: 10%;
+            top: 15vh;
+            padding-top: 2%;
+        }
+        .headdiv1{
+            width: 100%;
+            height: 35vh;
+            position: relative;
+            top: 30vh;
+        }
+        .orderpage{
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            position: relative;
+            top: 10vh;
+        }
+        .ordright{
+            width: 35%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .ordright div{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 900;
+            color: coral;
+        }
+        .ordright p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .ordright img{
+            text-align: center;
+            width: 60%;
+            height: 7vh;
+            position: relative;
+            left: 5%;
+        }
+        .handdiv{
+            width: 60%;
+        }
+        .handdiv img{
+            width: 100%;
+            height: 60vh;
+        }
+        .finaldiv{
+            background-color: bisque;
+            width: 95%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            left: 2.5%;
+            top: 3vh;
+        }
+        .innerfinal{
+            width: 90%;
+            height: 5vh;
+            background-color: white;
+            position: relative;
+            left: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .fix{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 3vh;
+        }
+        .footter a{
+            position: relative;
+            top: 3vh;
+        }
+        .footter h6{
+            position: relative;
+            top: 3vh;
+        }
+        .footter{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: greenyellow;
+            position: relative;
+        }
+        .innerfinal i{
+            position: relative;
+            top: 0.5vh;
+        }
+        .d3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .d4:hover{
+            width: 50px;
+            height: 50px;
+            box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+        }
+        .d5:hover{
+            width: 50px;
+            height: 50px;
+            box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+        }
+        .d6:hover{
+            width: 50px;
+            height: 50px;
+            box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+        }
+        .ls{
+            width: 90%;
+            height: 5vh;
+            background-color: white;
+            text-align: center;
+            position: relative;
+            left: 5%;
+            display: none;
+        }
+        .innerfinal div{
+            position: relative;
+            top: 1vh;
+        }
+        .innerfinal i{
+            position: relative;
+            top: 0.5vh;
+            right: 5px;
+        }
+        .innerfinal i:hover{
+            position: relative;
+            top: 0.5vh;
+            right: 5px;
+            font-size: 20px;
+            color: red;
+        }
+        .end3{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1.5%;
+        }
+        .p13{
+            font-size: 18px;
+        }
+        .s1{
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        .end4{
+            text-align: center;
+            padding-top: 9px;
+            background-color: whitesmoke;
+            height: 5vh;
+            color: rgb(0, 225, 255);
+        }
+        .end5{
+            background-color: rgb(0, 255, 255);
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: space-around;
+            font-size: medium;
+        }
+        .fa-square-facebook{
+            font-size: 40px;
+            color: bisque;
+            
+        }
+        .fa-square-facebook:hover{
+            background-color: blue;
+        }
+        .fa-instagram{
+            font-size: 40px;
+            color: rgb(156, 7, 57);
+        }
+        .fa-instagram:hover{
+            background-color:mediumorchid;
+        }
+        .fa-twitter{
+            font-size: 40px;
+            color:bisque;
+        }
+        .fa-twitter:hover{
+            background-color: blue;
+        }
+        </style>
+         </head>
+        <body>
+            <div class="pg1">
+                <div class="navbar">
+                    <div class="menu1">
+                        <a href="img.html"><img src="Veggie_Grill_logo.svg"></a>
+                    </div>
+                    <div></div>
+                    <div><a href="menu.html"  class="x2">MENUS</a></div>
+                    <div><a href="location.html"  class="x2">LOCATIONS</a></div>
+                    <div><a href="cat.html"  class="x2">CATERING</a></div>
+                    <div><a href="story.html"  class="x2">STORY</a></div>
+                    <div><a href="rewards.html"  class="x2">REWARDS</a></div>
+                    <div><a href="mas.html"  class="x2">MÁS VEGGIES</a></div>
+                    <div><a href="d.html"  class="x2">DAILY DEALS</a></div>
+                    <div></div>
+                    <div class="menu2"><h2>ORDER NOW</h2><h5>Pick-up or Delivery</h5></div>
+                </div>
+        <div class="background">
+            <div class="headdiv1"><div>DOWNLOAD THE APP GET FREE ENTREE.</div></div>
+        </div>
+        <div class="orderpage">
+            <div class="ordright">
+                <div>VG REWARDS</div>
+                <p>Thank you for helping us change food culture for the better! Download our app at the App Store or Google Play. Join to earn credits toward free Veggie Grill dishes and other exclusive member offers.</p>
+                <img src="img17.svg"><img src="img18.svg"/>
+            </div>
+            <div class="handdiv">
+                <img src="https://veggiegrill.com/wp-content/uploads/2022/04/rewards_phonehands.jpg"/>
+            </div>
+        </div>
+        <div class="finaldiv">
+            <div >
+                <div class="innerfinal"> 
+                    <div>How do I get the app?</div>
+                
+                <div><i  onclick="fun7(this,'ls')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls">Download from iTunes App Store or Google Play Store.</div>
+            </div>
+           
+            <div >
+                <div class="innerfinal"> 
+                    <div>Can I still use my Veggie Grill Android app?</div>
+                
+                <div><i onclick="fun7(this,'ls1')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls1">Yes! Just make sure you’re on version 2.0.3 or later.</div>
+         </div>
+            <div >
+                <div class="innerfinal"> 
+                    <div>Are nutritionals available in the app?</div>
+                
+                <div><i  onclick="fun7(this,'ls2')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls2">Yes, you can access our nutrition portal in the menu.</div>
+        </div>
+            <div >
+                <div class="innerfinal"> 
+                    <div>Why does the Veggie Grill app want to send me notifications?</div>                
+                <div><i  onclick="fun7(this,'ls3')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls3">The permission is required to uniquely identify the devices. </div>
+            </div>
+            <div >
+                <div class="innerfinal"> 
+                    <div>I have the old Veggie Grill iOS app - can I still use it?</div>
+                
+                <div><i  onclick="fun7(this,'ls4')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls4">Earn from the app’s home screen and scan your QR code at the register.</div>
+            </div>
+        </div>
+        <div class="end3">
+            <div class="p13">
+                <div class="s1">CONTACT</div>
+                <div class="s1">CAREERS</div>
+                <div class="s1">GIFT CARDS</div>
+                <div class="s1">NUTRITIONAL MENU</div>
+                <div class="s1">NUTRITIONAL CALCULATOR</div>
+            </div>
+            <div class="p14">
+                <div class="s1" >Connect with us</div>
+                <div class="s1"><i class="fa-brands fa-square-facebook"></i>   <i class="fa-brands fa-instagram"></i>    <i class="fa-brands fa-twitter"></i></div>
+                <div class="s1">Download our app</div>
+                <div class="s1">
+                    <img src="img17.svg"> <img src="img18.svg">
+                </div>
+            </div>
+        </div>
+        <div class="end4">
+            <h2>SIGN UP FOR UPDATES</h2>
+        </div>
+        <div class="end5">
+            <div class="p15">
+                <div><pre>Terms of Use   privacy policy   CA supply chain Act   cookie Preferencs</pre></div>
+            </div>
+            <div class="p16">
+                <div><pre>2023 Veggie Grill.all rights Reserved</pre></div>
+            </div>
+        </div>
+        <script>
+            var f=0
+            function fun7(ar,ar1){
+            
+                e=document.getElementById(ar1)
+                if(f==0)
+                {
+                    ar.className="fa-solid fa-minus"
+                    e.style.display="block"
+                    f=1
+                }
+                else{
+                    ar.className="fa-solid fa-plus"
+                    e.style.display="none"
+                    f=0
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0px;
+            }
+            .navbar{
+                width: 100%;
+                height: 12vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+                position: relative;
+            }
+            .menu1 img{
+                width: 70%;
+                height: 12vh;
+                padding-left: 2%;
+            }
+            .x2{
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: coral;
+                font-weight: 600;
+            }
+            .x2:after{
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                background-color: deeppink;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            .x2:hover:after{
+            transform: scaleX(1);
+            transform-origin: bottom center;
+            }
+            .menu2{
+                height: 12vh;
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background-color: rgb(0, 255, 255);
+                text-align: center;
+            }
+            .menu2:hover{
+                background-color: black;
+            }
+            .menu2 h2{
+                color: white;
+            }
+            .menu2 h5{
+                color: white;
+            }
+            .main{
+                width: 100%;
+                height: 100vh;
+                background-color: bisque;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+            }
+            .mainright{
+                width: 40%;
+                height: 100vh;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                text-align: center;
+            }
+            .right1{
+                font-size: 40px;
+                font-weight: 900;
+            }
+            .mainright a{
+                color: deeppink;
+                font-weight: 600;
+                font-size: 15px;
+            }
+            .mainright p{
+                font-weight: 300;
+                font-size: 20px;
+            }
+            .mainright p span{
+                color: deeppink;
+                font-weight: 300;
+                font-size: 20px;
+            }
+            .mainright button{
+                width: 50%;
+                height: 5vh;
+                background-color: deeppink;
+                color: white;
+                font-weight: 700;
+                font-size: 25px;
+                position: relative;
+                left: 20%;
+            }
+            .mainright button:hover{
+                width: 50%;
+                height: 5vh;
+                background-color: rgb(102, 20, 255);
+                color: white;
+                font-weight: 700;
+                font-size: 25px;
+                position: relative;
+                left: 20%;
+            }
+            .mainleft{
+                width: 50%;
+                height: 100vh;
+                padding-top: 2%;
+            }
+            .mainleft img{
+                width: 90%;
+                height: 95.5vh;    
+            }
+            .lostdiv{
+                font-size: 50px;
+                font-weight: 900;
+                text-align: center;
+            }
+            .lostp{
+                font-size: 20px;
+                font-weight: 200;
+                text-align: center;
+            }
+            .p8 img{
+                width:8%;
+                height: 10%;
+                padding-left: 47%;
+                padding-top: 2%;
+                
+            }
+            .p9 img{
+                width: 8%;
+                height: 10%;
+                padding-left: 47%;
+            }
+            .end3{
+                display: flex;
+                justify-content: space-around;
+                padding-top: 1.5%;
+            }
+            .p13{
+                font-size: 18px;
+            }
+            .s1{
+                margin-top: 15px;
+                font-size: 20px;
+            }
+            .end4{
+                text-align: center;
+                padding-top: 9px;
+                background-color: whitesmoke;
+                height: 5vh;
+                color: rgb(0, 225, 255);
+            }
+            .end5{
+                background-color: rgb(0, 255, 255);
+                width: 100%;
+                height: 5vh;
+                display: flex;
+                justify-content: space-around;
+                font-size: medium;
+            }
+            .fa-square-facebook{
+                font-size: 40px;
+                color: bisque;
+                
+            }
+            .fa-square-facebook:hover{
+                background-color: blue;
+            }
+            .fa-instagram{
+                font-size: 40px;
+                color: rgb(156, 7, 57);
+            }
+            .fa-instagram:hover{
+                background-color:mediumorchid;
+            }
+            .fa-twitter{
+                font-size: 40px;
+                color:bisque;
+            }
+            .fa-twitter:hover{
+                background-color: blue;
+            }
+            marquee{
+                font-size: 30px;
+                font-weight: 800;
+                color: red;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pg1">
+            <div class="navbar">
+                <div class="menu1">
+                    <a href="img.html"><img src="Veggie_Grill_logo.svg"></a>
+                </div>
+                <div><a href="menu.html"  class="x2">MENUS</a></div>
+                <div><a href="location.html"  class="x2">LOCATIONS</a></div>
+                <div><a href="cat.html"  class="x2">CATERING</a></div>
+                <div><a href="story.html"  class="x2">STORY</a></div>
+                <div><a href="rewards.html"  class="x2">REWARDS</a></div>
+                <div><a href="mas.html"  class="x2">MÁS VEGGIES</a></div>
+                <div><a href="d.html"  class="x2">DAILY DEALS</a></div>
+                <div></div>
+                <div class="menu2"><h2>ORDER NOW</h2><h5>Pick-up or Delivery</h5></div>
+            </div>
+        <div class="main">
+            <div class="mainright">
+                <div class="right1">ENJOY OUR NEW DAILY DEALS</div>
+                <a href="">ONLINE PROMO CODES BELOW</a>
+                <p>MONDAY: use code <span>monday</span> at checkout. an entree is defined </br>as a burger, sandwich, bowl, burrito or salad</p>
+                <p>TUESDAY: no code necessary</p>
+                <p>WEDNESDAY: use code  <span>wednesday</span> at checkout</p>
+                <p>THURSDAY: use code  <span>thursday</span> at checkout. excludes</br> loaded burrito</p>
+                <p>FRIDAY: use code  <span>friday</span> at checkout. an entree is defined</br> as a burger, sandwich, bowl, burrito or salad</p>
+                <button>ORDER NOW</button>
+            </div>
+            <div class="mainleft">
+                <img src="https://veggiegrill.com/wp-content/uploads/2023/02/new-daily-deals.jpg"/>
+            </div>
+        </div>
+        <div class="lostdiv">MORE DETAILS</div>
+        <p class="lostp">Daily deals are not valid with any other offers, discounts, or promotions.</br> 
+            Promotion is available in-store, online, and in-app.</br>
+            Promotion is not valid on third-party delivery services.</br>
+        </p>
+        <div class="mid1">
+            <div class="p8">
+                <img src="img13.png">
+            </div>
+            <div class="p9">
+                <img src="Veggie_Grill_logo.svg">
+            </div>
+        <div class="end3">
+            <div class="p13">
+                <div class="s1">CONTACT</div>
+                <div class="s1">CAREERS</div>
+                <div class="s1">GIFT CARDS</div>
+                <div class="s1">NUTRITIONAL MENU</div>
+                <div class="s1">NUTRITIONAL CALCULATOR</div>
+            </div>
+            <div class="p14">
+                <div class="s1" >Connect with us</div>
+                <div class="s1"><i class="fa-brands fa-square-facebook"></i>   <i class="fa-brands fa-instagram"></i>    <i class="fa-brands fa-twitter"></i></div>
+                <div class="s1">Download our app</div>
+                <div class="s1">
+                    <img src="img17.svg"> <img src="img18.svg">
+                </div>
+            </div>
+        </div>
+        <div class="end4">
+            <h2>SIGN UP FOR UPDATES</h2>
+        </div>
+            <marquee>"Thank you  For visiting"</marquee>
+        <div class="end5">
+            <div class="p15">
+                <div><pre>Terms of Use   privacy policy   CA supply chain Act   cookie Preferencs</pre></div>
+            </div>
+            <div class="p16">
+                <div><pre>2023 Veggie Grill.all rights Reserved</pre></div>
+            </div>
+        </div>
+    </body>
+</html>
